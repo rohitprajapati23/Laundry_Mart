@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script>
+    (function() {
+        emailjs.init("GolQ-B9TsHL2GPpsO");
+    })();
+</script>
+
+
+</head>
+<body>
+    
+    <!--==================Header-Section===================-->
+
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">Logo</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#booking">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#about">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="username">
+                <a href="#">Username</a>
+            </div>
+        </div>
+    </header>
+
+    <!--=====================Main-Hero-Section===============-->
+
+    <section class="hero-section">
+        <div class="hero">
+            <div class="left">
+                <h1>Revitalize Your<br>Clothes with Expert
+                <br><span>Laundry Services</span></h1>
+                <p>From premium dry cleaning to swift wash and fold,
+                    we deliver care and convenience. Schedule a pickup
+                    and rediscover the freshness of your clothes today!
+                </p>
+                <a href="#booking"><button class="btn">Book a service today!</button></a>
+            </div>
+            <div class="right">
+                <img src="./images/laundry.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--====================Achieve-Hero-Section==============-->
+
+    <section>
+        <div class="achieve">
+            <h2>Our Achievements</h2>
+            <p>15+<br><span>Laundry Services</span></p>
+            <p>240+<br><span>Happy Customers</span></p>
+            <p>2+ Yrs<br><span>Experience</span></p>
+        </div>
+    </section>
+
+    <!--====================Booking-Section====================-->
+
+    <section id="booking" class="book-section">
+        <div class="booking">
+
+            <!--===============Services-Display-List===========-->
+
+            <div class="left-book">
+                <h2>Our Services</h2>
+                <p class="service-para">Click on the Add to cart Button to add the services to your cart</p>
+                <div class="services">
+                
+                    <div class="service" style="gap: 250px;">
+                        <p id="service-1">Dry Cleaning </p>
+                        <p id="price-1"><span>$200.00</span></p>
+                    </div>
+                    <!-- <button id="btn1" class="service-btn">Add Item</button> -->
+                    <button class="service-btn" service-name="Dry Cleaning" service-price="200">Add Item</button>
+                </div>
+                <div class="services">
+                    
+                    <div class="service" style="gap: 250px;">
+                        <p id="service-1">Wash & Fold</p>
+                        <p id="price-2"><span>$100.00</span></p>
+                    </div>
+                    <button class="service-btn" service-name="Wash & Fold" service-price="100">Add Item</button>
+                </div>
+                <div class="services">
+        
+                    <div class="service" style="gap: 303px;">
+                        <p id="service-1">Ironing</p>
+                        <p id="price-3"><span>$30.00</span></p>
+                    </div>
+                    <button class="service-btn" service-name="Ironing" service-price="30">Add Item</button>
+                </div>
+                <div class="services">
+                    
+                    <div class="service" style="gap: 237px;">
+                        <p id="service-1">Stain Removal</p>
+                        <p id="price-4"><span>$500.00</span></p>
+                    </div>
+                    <button class="service-btn" service-name="Stain Removal" service-price="500">Add Item</button>
+                </div>
+                <div class="services">
+                    
+                    <div class="service" style="gap: 140px;">
+                        <p id="service-1">Leather & Suede Cleaning</p>
+                        <p id="price-5"><span>$999.00</span></p>
+                    </div>
+                    <button class="service-btn" service-name="Leather & Suede Cleaning" service-price="999">Add Item</button>
+                </div>
+                <div class="services">
+                    
+                    <div class="service" style="gap: 150px;">
+                        <p id="service-1">Wedding Dress Cleaning</p>
+                        <p id="price-6"><span>$2800.00</span></p>
+                    </div>
+                    <button class="service-btn" service-name="Wedding Dress Cleaning" service-price="2800">Add Item</button>
+                </div>
+                <p class="description">Add the items to the cart and book now</p>
+            </div>
+
+            <div class="right-book">
+
+                <!--===================Selected-Services=========-->
+
+                <div class="upper">
+                    <h3>Added Items</h3>
+                    <table id="serviceTable">
+                        <thead>
+                            <tr>
+                                <th>S.no.</th>
+                                <th>Service Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+
+                    
+                    
+
+                    <div class="total-amount">
+                        <h3>Total Amount</h3>
+                        <h4 id="balance">0</h4>
+                    </div>
+                </div>
+
+                <!--===================Booking-Services(Form-Section)======-->
+
+                <div class="lower">
+                    <h3>Book Now</h3>
+                    <div class="form">
+                        <form class="form" id="form">
+                            <!-- <input type="hidden" name="access_key" value="f7d661a8-9993-4f5a-994f-b803a827cfba"> -->
+                            <label for="name">Full Name:</label>
+                            <input id="name" type="name" name="name" required>
+                            <div class="email-phone">
+                                <div class="email">
+                                    <label for="email">Email:</label>
+                                    <input id="email" type="email" name="email" required>
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">Phone:</label>
+                                    <input id="phone" type="number" name="phone" required>
+                                </div>
+                            </div>
+                            <input type="hidden" name="user_services" id="selected_services">
+
+                            <button type="submit" id="book-btn" class="book-btn">Book now</button>
+                        </form>
+                        <p id="book-msg" class="book-msg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============About the Services & Advertisement & Subscribe========-->
+
+    <section id="about">
+        <div class="hero-2">
+            <div class="quality-des">
+                <div class="quality">
+                    <ion-icon name="shirt-outline" class="icons"></ion-icon>
+                    <h3>Premium Services</h3>
+                    <p>Elevate your wardrobe with our meticulous dry cleaning,
+                        ensuring garments look and feel as good as new.
+                    </p>
+                </div>
+                <div class="quality">
+                    <ion-icon name="people-outline" class="icons"></ion-icon>
+                    <h3>Quick Support</h3>
+                    <p>We're committed to providing prompt solutions to
+                        ensure your experience in smooth and worry-free.
+                    </p>
+                </div>
+                <div class="quality">
+                    <ion-icon name="archive-outline" class="icons"></ion-icon>
+                    <h3>Hassle free Delivery</h3>
+                    <p>Enjoy seamless services with our convenient pickup 
+                        and delivery options, tailored to your schedule.
+                    </p>
+                </div>
+                <div class="quality">
+                    <ion-icon name="person-add-outline" class="icons"></ion-icon>
+                    <h3>Affordable Prices</h3>
+                    <p>Experience exceptional care without breaking the bank- 
+                        our affordable prices make laundry day stress-free.
+                    </p>
+                </div>
+            </div>
+            <div class="subscribe">
+                <div class="subs-head">
+                    <h2>Subscribe to our<br>newsletter</h2>
+                </div>
+                <div class="subs-form">
+                    <input type="text" name="name" placeholder="Full name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button class="subs-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=================Footer-Section====================-->
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <h2>Logo</h2>
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet <br>consectetur acing elit. Libero</p>
+            </div>
+            <div class="imp-links">
+                <h3>Important Links</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>mail@gmail.com</p>
+                <p>+1234567890</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <ion-icon name="logo-instagram" class="social-icons"></ion-icon>
+                <ion-icon name="logo-facebook" class="social-icons"></ion-icon>
+                <ion-icon name="logo-youtube" class="social-icons"></ion-icon>
+            </div>
+        </div>
+        <p class="copyright"><b>@Copyright.</b> Created by Rohit Prajapati</p>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+
+/* ========Header-Section=========== */
+
+.header{
+    background-color: aliceblue;
+    padding: 25px 200px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.username a{
+    text-decoration: none;
+    color: rgb(12, 181, 247);
+    background-color: rgb(203, 230, 241);
+    padding: 15px 20px;
+    border-radius: 6px;
+}
+.username a:hover{
+    cursor: pointer;
+    background-color: rgb(177, 222, 240);
+}
+.nav ul{
+    list-style: none;
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 520;
+    margin: 0 25px;
+}
+
+
+/* ============Main-Hero-Section============== */
+
+.hero-section{
+    padding: 50px 200px;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.left{
+    margin-top: 100px;
+}
+.left h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.left span{
+    color: rgb(12, 181, 247);
+}
+.left p{
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 30px;
+    padding: 20px 40px;
+    font-size: 1.1rem;
+    background-color: rgb(12, 181, 247);
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(33, 191, 253);
+}
+.right{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.right img{
+    height: 400px;
+    width: auto;
+}
+
+
+/* =============Achieve-Hero-Section============== */
+
+.achieve{
+    width: 100%;
+    height: 140px;
+    margin-top: 30px;
+    background-color: rgb(12, 181, 247);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.achieve h2{
+    font-size: 2.2rem;
+}
+.achieve p{
+    font-size: 2rem;
+}
+
+.achieve span{
+    font-size: 1rem;
+}
+
+
+/* ================Booking-Section============== */
+
+.booking{
+    background-color: rgb(205, 205, 205);
+    padding: 50px 150px;
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+    gap: 30px;
+}
+
+
+/* ==================Services-Display-List============== */
+
+.left-book{
+    background-color: aliceblue;
+    padding: 50px 40px;
+    border-radius: 20px;
+    /* height: 700px; */
+}
+.left-book h2{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+.service-para{
+    font-size: 1.1rem;
+    opacity: 0.9;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+.services p,
+.service-btn{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 520;
+}
+.service{
+    display: flex;
+}
+
+.service-btn{
+    background-color: green;
+}
+.services span{
+    color: red;
+}
+.description{
+    color: blue;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+    padding-top: 30px;
+}
+.service-btn{
+    padding: 8px 35px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: none;
+}
+.service-btn:hover{
+    cursor: pointer;
+}
+
+
+/* =============Right-Booking=========== */
+
+.right-book{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 10px; */
+}
+
+
+/* ================Selected-Services=============== */
+
+.upper,
+.lower{
+    background-color: aliceblue;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+.upper{
+    height: 370px;
+    position: relative;
+}
+.upper h3{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 8px;
+    text-align: left;
+}
+th{
+    border-bottom: 1px solid gray;
+}
+
+.total-amount{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    bottom: 5px;
+    
+    position: absolute;
+    gap: 200px;
+}
+
+
+
+
+
+/* ==============Booking-Services(Form-Section)============ */
+
+.lower h3{
+    font-size: 1.2rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.form label{
+    display: block;
+    margin-top: 20px;
+}
+.form input{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.email-phone{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.book-btn{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(121, 121, 249);
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.book-btn:hover{
+    cursor: pointer;
+}
+.lower{
+    padding-bottom: 0px;
+}
+.book-msg{
+    /* padding-bottom: 10px;
+    padding-top: 20px; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ===========About the Services & Advertisement & Subscribe===== */
+
+.hero-2{
+    padding: 50px 0;
+    padding-bottom: 0;
+}
+.quality-des{
+    padding: 10px 200px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.quality{
+    text-align: center;
+}
+.quality .icons{
+    font-size: 4rem;
+}
+.quality h3{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.quality p{
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.subscribe{
+    background-color: rgb(12, 181, 247);
+    width: 100%;
+    padding: 50px 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 200px;
+    margin-top: 80px;
+}
+.subs-head{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.subs-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.subs-form input{
+    padding: 10px;
+    background-color: rgb(101, 206, 248);
+    border: none;
+    color: white;
+}
+.subs-btn{
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(12, 181, 247);
+}
+.subs-btn:hover{
+    cursor: pointer;
+}
+
+
+/* ==================Footer-Section============== */
+
+.footer{
+    background-color: rgb(214, 211, 211);
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.footer-logo p{
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.imp-links h3{
+    margin-bottom: 15px;
+}
+.imp-links ul{
+    list-style: none;
+}
+.imp-links a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+.imp-links li{
+    margin-top: 5px;
+    color: black;
+}
+.contact h3{
+    margin-bottom: 15px;
+}
+.contact p{
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.social-links h3{
+    margin-bottom: 15px;
+}
+.social-links .social-icons{
+    opacity: 0.8;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.copyright{
+    text-align: center;
+    background-color: rgb(214, 211, 211);
+    border-top: 1px solid white;
+    padding: 10px;
+    color: black;
+}
+.copyright b{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
