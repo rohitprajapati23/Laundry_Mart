@@ -93,6 +93,13 @@ document.getElementById('book-btn').addEventListener('click', function(e){
         return;
     }
 
+    if (addedItems.length === 0) {
+        msg.innerText='No Item added. Please select services!';
+        msg.style.color='red';
+        e.preventDefault();
+        return;
+    }
+
     let services = addedItems.map(item => item.name).join(", ");
     let totalAmount = addedItems.reduce((sum, item) => sum + item.price, 0);
 
