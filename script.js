@@ -103,6 +103,9 @@ document.getElementById('book-btn').addEventListener('click', function(e){
         e.preventDefault();
         return;
     }
+    if(addedItems.length !== 0){
+        serviceMsg.style.display='none';
+    }
 
     let services = addedItems.map(item => item.name).join(", ");
     let totalAmount = addedItems.reduce((sum, item) => sum + item.price, 0);
