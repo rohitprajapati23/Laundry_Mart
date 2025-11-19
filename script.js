@@ -98,8 +98,7 @@ document.getElementById('book-btn').addEventListener('click', function(e){
     if (addedItems.length === 0) {
         serviceMsg.innerText='No item added. Please add service items';
         serviceMsg.style.color='red';
-        msg.innerText='No Item added. Please select services!';
-        msg.style.color='red';
+        
         e.preventDefault();
         return;
     }
