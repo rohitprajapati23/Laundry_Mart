@@ -70,6 +70,7 @@ let email = document.getElementById('email');
 let phone = document.getElementById('phone');
 let book = document.getElementById('book-btn');
 let msg = document.getElementById('book-msg');
+let serviceMsg = document.getElementById('service-msg');
 
 book.addEventListener('click', () => {
     if(fullName.value && email.value && phone.value){
@@ -78,6 +79,8 @@ book.addEventListener('click', () => {
     } else {
         msg.innerText='Your booking has not been submitted!';
         msg.style.color='red';
+        serviceMsg.innerText='No item added. Please add service items';
+        serviceMsg.style.color='red';
     }
     
 })
