@@ -5,10 +5,10 @@
 let addedItems = [];
 
 let buttons = document.querySelectorAll('.service-btn');
-let serviceMsg = document.getElementById('service-msg');
+let serviceMsgs = document.getElementById('service-msg');
 buttons.forEach(function(button) {
     button.addEventListener('click', function() {
-        serviceMsg.style.display='none';
+        serviceMsgs.style.display='none';
         let name = button.getAttribute('service-name');
         let price = parseInt(button.getAttribute('service-price'));
 
@@ -94,7 +94,7 @@ document.getElementById('book-btn').addEventListener('click', function(e){
     if (!form.reportValidity()) {
         return;
     }
-
+    let serviceMsg = document.getElementById('service-msg');
     if (addedItems.length === 0) {
         serviceMsg.innerText='No item added. Please add service items.';
         serviceMsg.style.color='red';
