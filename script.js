@@ -5,9 +5,12 @@
 let addedItems = [];
 
 let buttons = document.querySelectorAll('.service-btn');
-let serviceMsgs = document.getElementById('service-msg');
+let serviceMsg = document.getElementById('service-msg');
 buttons.forEach(function(button) {
     button.addEventListener('click', function() {
+        if(addedItems.length !== -1){
+        serviceMsg.innerText=''
+        }
         serviceMsgs.style.display='none';
         let name = button.getAttribute('service-name');
         let price = parseInt(button.getAttribute('service-price'));
@@ -94,7 +97,7 @@ document.getElementById('book-btn').addEventListener('click', function(e){
     if (!form.reportValidity()) {
         return;
     }
-    let serviceMsg = document.getElementById('service-msg');
+    
     if (addedItems.length === 0) {
         serviceMsg.innerText='No item added. Please add service items.';
         serviceMsg.style.color='red';
@@ -102,9 +105,7 @@ document.getElementById('book-btn').addEventListener('click', function(e){
         e.preventDefault();
         return;
     }
-    if(addedItems.length !== 0){
-        serviceMsg.style.display='none';
-    }
+    
 
     let services = addedItems.map(item => item.name).join(", ");
     let totalAmount = addedItems.reduce((sum, item) => sum + item.price, 0);
