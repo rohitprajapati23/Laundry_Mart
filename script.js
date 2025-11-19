@@ -87,13 +87,15 @@ book.addEventListener('click', () => {
 
 document.getElementById('book-btn').addEventListener('click', function(e){
     e.preventDefault();
-
+    let serviceMsg = document.getElementById('service-msg');
     let form = document.getElementById('form');
     if (!form.reportValidity()) {
         return;
     }
 
     if (addedItems.length === 0) {
+        serviceMsg.innerText='No item added. Please add service items';
+        serviceMsg.style.color='red';
         msg.innerText='No Item added. Please select services!';
         msg.style.color='red';
         e.preventDefault();
