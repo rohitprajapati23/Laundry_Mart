@@ -5,10 +5,10 @@
 let addedItems = [];
 
 let buttons = document.querySelectorAll('.service-btn');
-
+let serviceMsg = document.getElementById('service-msg');
 buttons.forEach(function(button) {
     button.addEventListener('click', function() {
-
+        serviceMsg.style.display='none';
         let name = button.getAttribute('service-name');
         let price = parseInt(button.getAttribute('service-price'));
 
@@ -89,7 +89,7 @@ book.addEventListener('click', () => {
 
 document.getElementById('book-btn').addEventListener('click', function(e){
     e.preventDefault();
-    let serviceMsg = document.getElementById('service-msg');
+    
     let form = document.getElementById('form');
     if (!form.reportValidity()) {
         return;
