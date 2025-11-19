@@ -242,7 +242,9 @@ th{
     position: absolute;
     gap: 200px;
 }
-
+#service-msg{
+    margin-top: 10px;
+}
 
 
 
