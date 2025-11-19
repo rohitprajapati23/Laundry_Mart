@@ -11,7 +11,7 @@ buttons.forEach(function(button) {
         if(addedItems.length !== -1){
         serviceMsg.innerText=''
         }
-        serviceMsgs.style.display='none';
+    
         let name = button.getAttribute('service-name');
         let price = parseInt(button.getAttribute('service-price'));
 
