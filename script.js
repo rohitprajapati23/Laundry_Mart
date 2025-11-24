@@ -118,7 +118,23 @@ document.getElementById('book-btn').addEventListener('click', function(e){
         total: totalAmount
     };
 
+    let userMsg = {
+        fullName: fullName.value,
+        email: email.value,
+        services: services,
+        total: totalAmount
+    };
+
     emailjs.send("service_wj4t25z", "template_7t6un8o", emailMsg)
+
+    .then(function () {
+    emailjs.send("service_wj4t25z", "template_mt205kl", userMsg);
+    })
+
+    
+
+
+        
     .then(function(response) {
         msg.innerText = "Your booking is confirmed!";
         msg.style.color = "green";
