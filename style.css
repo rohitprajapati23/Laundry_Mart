@@ -249,6 +249,24 @@ th{
     margin-top: 10px;
 }
 
+.no-items1{
+    
+    padding: 50px 0px;
+}
+#no-item-icon{
+    font-size: 3rem;
+    margin-left: 150px;
+}
+.no-items1 h3{
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.no-items1 p{
+    text-align: center;
+    opacity: 0.9;
+}
+
 
 
 
