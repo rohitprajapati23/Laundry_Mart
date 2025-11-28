@@ -96,7 +96,7 @@ book.addEventListener('click', () => {
         msg.innerText='';
     
     } else {
-        msg.innerText='Your booking has not been submitted!';
+        msg.innerText='Please fill your information and add items!';
         msg.style.color='red';
         
     }
@@ -115,8 +115,8 @@ document.getElementById('book-btn').addEventListener('click', function(e){
     }
     
     if (addedItems.length === 0) {
-        serviceMsg.innerText='No item added. Please add service items.';
-        serviceMsg.style.color='red';
+        msg.innerText='No item added. Please add service items.';
+        msg.style.color='red';
         
         e.preventDefault();
         return;
