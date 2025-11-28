@@ -155,12 +155,17 @@ document.getElementById('book-btn').addEventListener('click', function(e){
         msg.innerText = "Your booking is confirmed!";
         msg.style.color = "green";
         document.getElementById('form').reset();
+        setTimeout(() => {
+            msg.innerText='';
+        },2500);
 
         addedItems = [];
         buttons.forEach(btn => {
             btn.textContent = "Add Item";
             btn.style.backgroundColor = "green";
+            btn.style.color='black';
         });
+        noItems();
         updItems();
 
     },
