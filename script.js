@@ -1,6 +1,11 @@
 
 //======================Service-Table & Balance Update====================//
 
+function nextSection() {
+    document.getElementById('booking').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
 
 let addedItems = [];
 
