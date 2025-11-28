@@ -9,6 +9,15 @@ function nextSection() {
 
 let addedItems = [];
 
+function noItems(){
+    let empty = document.querySelector('.no-items1');
+    if(addedItems.length === 0){
+        empty.style.display = "block";
+    } else {
+        empty.style.display = "none";
+    }
+}
+
 let buttons = document.querySelectorAll('.service-btn');
 let serviceMsg = document.getElementById('service-msg');
 buttons.forEach(function(button) {
