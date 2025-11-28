@@ -44,13 +44,15 @@ buttons.forEach(function(button) {
 
         if(added){
             button.innerText='Add Item';
-            button.style.backgroundColor='green'
+            button.style.backgroundColor='green';
+            button.style.color='black';
             
         } else{
             button.innerText='Remove';
             button.style.backgroundColor='red'
-            
+            button.style.color='white';
         }
+        noItems();
         updItems();
     })
 });
