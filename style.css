@@ -46,6 +46,9 @@ body{
     text-decoration: none;
     color: rgb(78, 78, 78);
 }
+.nav li a:hover{
+    border-bottom: 2px solid rgb(12, 181, 247);
+}
 
 .nav li{
     display: inline-block;
